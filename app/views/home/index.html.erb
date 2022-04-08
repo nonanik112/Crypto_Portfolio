@@ -1,0 +1,16 @@
+<h1>Home</h1>
+
+
+<hr>
+
+<% @coins %>
+
+<% for x in @coins do ["data"]  %>
+     <% for coin in @my_coins do %>
+      <% if coin == ["symbol"]%>
+        <%=x["name"]%>: $<%=x["quote"]["USD"]["price"]%><br>
+         Rank: <%=x["cmc_rank"]%>
+        <br><br>
+      <%end%>
+    <%end%>
+  <%end%>
