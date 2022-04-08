@@ -9,8 +9,8 @@
 <br>
 
 <% if @symbol %>
-   <%= for x in @lookup_coin %>
-     <% if @symbol == x["symbol"] %>
+   <%= for x in @lookup_coin do %>
+     <% if @symbol == ["symbol"] %>
         <%= x["name"] %>: $<%= x["pric_usd"] %>
         <br>
         Rank: <%= x["rank"] %>
